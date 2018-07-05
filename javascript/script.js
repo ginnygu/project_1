@@ -1,20 +1,20 @@
 const holes = document.querySelectorAll('.holes');
 let instructors= ["aaron.png", "jz.png", "jason.png", "john.png", "drake.png"];
 let playerScore = 0;
-function pickOne(holes){
+let currentHole;
+function pickOne(){
     let x = Math.floor(Math.random() * holes.length);
     let random = holes[x];
-    return random;
-    let holey = holes;
-    if (holey === holes){
-        return pickOne(holes);
-    }
+    debugger;
+    return (random === currentHole) ? pickOne() : random;
+
     
 }
 
+
 function move(){
     let time = randomTime(100, 1000);
-    let hole = pickOne(holes);
+    currentHole = pickOne();
     
 }
 
@@ -26,10 +26,9 @@ function clicking (event) {
 
 addEventListener('click', clicking);
 
-function randomFaces(pick){
+function randomFaces(instructors){
     
-      let randomize = Math.floor(Math.Random() * instructors.length);
-      let pick= document.querySelectorAll(".faced");
+      let randomize = Math.floor(Math.random() * instructors.length);
       let choose = instructors[randomize];
 
       return choose;
