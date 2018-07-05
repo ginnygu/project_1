@@ -98,3 +98,10 @@ body {
     bottom: 21%;
     right: 34%;
 }
+
+#faces {
+    background-size: 40%;
+    transform: translateY(60%);
+    transition: transform 0.3s;
+    visibility: hidden;
+  }
