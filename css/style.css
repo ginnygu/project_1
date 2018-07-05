@@ -106,6 +106,9 @@ body {
     visibility: hidden;
   }
 
-.head {
-    display: none;
+
+
+.faceholder img{
+    float: left; 
+
 }
