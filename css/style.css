@@ -1,3 +1,4 @@
+/* resetting margin for all default properties */
 * {
     margin: 0 auto;
 }
@@ -13,6 +14,12 @@ body {
 .baby {
     flex: 1;
 }
+/* changing the cursor to a hammer */
+#gameholes {
+    cursor: url(../images/hammer.png);
+}
+
+/* top right and left section */
 .timer_score {
     top: 10%;
     position: absolute;
@@ -46,6 +53,8 @@ body {
     bottom: 10%;
     left: 9.3%;
 }
+
+/* gameboard */
 .holes {
     position: absolute;
     display: flex;
@@ -116,6 +125,7 @@ body {
     }
 }
 
+/* faces of the instructors */
 #aaron, #jason, #drake, #john, #jz{
     animation: slide .5s forwards;
     position: absolute;
@@ -150,6 +160,10 @@ body {
 .info{
     padding: 75px 0 75px 0;
 
+}
+
+.final {
+    padding-bottom: 50px; 
 }
 
 .game_button, .game_button2, .instru_button{

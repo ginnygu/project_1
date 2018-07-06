@@ -28,8 +28,8 @@ function chooseRandomFace(collection){
 // collecting point function
 document.querySelector('#gameholes').addEventListener('click', (event)=> {
   const goodHitFace = event.path.includes(currentFace);
-  const goodHitHole = event.path.includes(currentHole);     
-  if(goodHitFace && goodHitHole) {
+//   const goodHitHole = event.path.includes(currentHole);     
+  if(goodHitFace && instructors) {
       playerScore += 10;
       document.querySelector('.numberScore').innerText = playerScore;
   }
@@ -42,7 +42,7 @@ function randomTime(min, max){
 let timed;
 
 function playGame(){
-    let time = randomTime(500, 1800);
+    let time = randomTime(500, 2000);
     currentHole = chooseRandomHole();
     currentFace = chooseRandomFace();
     currentHole.appendChild(currentFace);
@@ -123,5 +123,7 @@ function gameOver(){
     gameBox.classList.add('show_box');
     document.querySelector('.final').innerText = playerScore;
 }
+
+
 
 
