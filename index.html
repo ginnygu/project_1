@@ -33,7 +33,7 @@
                 <button class="startButton">Start Game</button>
             </div>
             <div class="resetButton">
-            <button class="resets" type="reset">Reset</button>
+            <button class="resets" type="reset" onClick="document.location.reload(true)">Reset</button>
 
             </div>
         </div>
@@ -93,6 +93,40 @@
         <img src="images/drake.png" id="drake">
         <img src="images/john.png" id="john">
         <img src="images/jz.png" id="jz">
+    </div>
+    <!-- Modal box start -->
+    <div class="start_modal">
+        <div class="start_info">
+            <h1 class="welcome">Whack</h1>
+            <h1 class="welcome">- the -</h1>
+            <h1 class="welcome">Instructor</h1>
+            <p class="info"> The only time you get points for hitting your Instructor!</p>
+            <button class="instru_button">Instruction</button>
+            <button class="game_button">Start Game</button>
+        </div>
+    </div>
+    <!-- info modal -->
+    <div class="info_box">
+        <div class="start_info">
+            <h1 class="welcome">Instructions</h1>
+            <ul>
+                <li class="info2">You have 15 seconds to hit the Instrutors as many times as you can!</li>
+                <li class="info2">Each time you hit them, you get 10 points!</li>
+                <li class="info2">May the game be in your favor!</li>
+            </ul>
+            <button class="game_button2">Start Game</button>
+        </div>
+    </div>
+
+        <!-- winning modal -->
+    <div class="gameOver">
+        <div class="start_info">
+            <h1 class="finalScore">Game Over</h1>
+            <p class="info">You Scored:</p>
+            <p class="final"></p>
+    
+            <button class="game_button3">Play Again</button>
+        </div>
     </div>
 
 <script src="javascript/script.js"></script>

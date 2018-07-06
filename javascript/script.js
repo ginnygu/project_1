@@ -7,7 +7,7 @@ let currentFace = chooseRandom(instructors);
 function chooseRandom(collection) {
   return collection[Math.floor(Math.random() * collection.length)];
 }
-
+// using the chooseRandom function to randomly choose a hole
 function chooseRandomHole(collection) {
     let newChoice;
     do {
@@ -16,7 +16,7 @@ function chooseRandomHole(collection) {
     return newChoice;   
 }
 
-//random faces
+//using the chooseRandom function to randomly choose a face
 
 function chooseRandomFace(collection){
     let newFace;
@@ -29,12 +29,10 @@ function chooseRandomFace(collection){
 document.querySelector('#gameholes').addEventListener('click', (event)=> {
   const goodHitFace = event.path.includes(currentFace);
   const goodHitHole = event.path.includes(currentHole);     
-    console.log(goodHitHole, goodHitFace);
   if(goodHitFace && goodHitHole) {
       playerScore += 10;
       document.querySelector('.numberScore').innerText = playerScore;
   }
-
 });
 
 function randomTime(min, max){
@@ -42,21 +40,18 @@ function randomTime(min, max){
 }
 //starting game function
 let timed;
+
 function playGame(){
-    
-    let time = randomTime(500, 2000);
+    let time = randomTime(500, 1800);
     currentHole = chooseRandomHole();
     currentFace = chooseRandomFace();
-
     currentHole.appendChild(currentFace);
     timed = setTimeout(() => {
         currentHole.removeChild(currentFace);
         playGame();
-
-    }, time);
-
-    
+    }, time); 
 }
+
 // start button
 document.querySelector(".startButton").addEventListener('click', (event) => {
     event.preventDefault();
@@ -67,7 +62,7 @@ document.querySelector(".startButton").addEventListener('click', (event) => {
 //timer
 
 document.querySelector('.timer').innerHTML =
-  00 + ":" + 10;
+  00 + ":" + 15;
 
 
 function startTimer() {
@@ -78,6 +73,7 @@ function startTimer() {
   if(s==59){m=m-1}
   if(m<0){
       clearTimeout(timed);
+      gameOver();
     return;
   }
   
@@ -92,3 +88,40 @@ function checkSecond(sec) {
   if (sec < 0) {sec = "59"};
   return sec;
 }
+
+
+//modal boxes
+
+const modalOne = document.querySelector('.start_modal');
+const closeBox = document.querySelector('.game_button');
+const instruBox = document.querySelector('.info_box');
+const info = document.querySelector('.instru_button');
+const closeBox2 = document.querySelector('.game_button2');
+window.addEventListener('load', (event) => {
+    modalOne.classList.add('show_box');
+});
+
+function closeButton(){
+      modalOne.classList.remove('show_box');
+      instruBox.classList.remove('show_box');
+}
+
+function infoBox(){
+    modalOne.classList.remove('show_box');
+    instruBox.classList.add('show_box');
+}
+
+closeBox.addEventListener('click', closeButton);
+closeBox2.addEventListener('click', closeButton);
+info.addEventListener('click', infoBox);
+
+//Game Over
+let finalScore = document.querySelector('.numberScore').innerText;
+const gameBox = document.querySelector('.gameOver');
+
+function gameOver(){
+    gameBox.classList.add('show_box');
+    document.querySelector('.final').innerText = playerScore;
+}
+
+
