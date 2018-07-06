@@ -3,45 +3,59 @@ let instructors = document.querySelectorAll('#faces>img');
 let playerScore = 0;
 let currentHole = chooseRandom(holes);
 let currentFace = chooseRandom(instructors);
-debugger;
 // @author Jason Seminara <js@ga.co>
 function chooseRandom(collection) {
   return collection[Math.floor(Math.random() * collection.length)];
 }
 
-function chooseRandomWithoutCollision(collection) {
+function chooseRandomHole(collection) {
     let newChoice;
     do {
         newChoice = chooseRandom(holes);
     } while (newChoice === currentHole);
-    return newChoice;
+    return newChoice;   
 }
 
+//random faces
 
-
-
-function move(){
-    let time = randomTime(100, 1000);
-    // current one
-    currentHole = chooseRandomWithoutCollision(holes);
+function chooseRandomFace(collection){
+    let newFace;
+    do {
+        newFace = chooseRandom(instructors);
+    } while (newFace === currentFace);
+    return newFace;
 }
-
-function clicking (event) {
-    playerScore += 10;
-    score.innerText= playerScore;
-
-    }
-
+// collecting point function
 document.querySelector('#gameholes').addEventListener('click', (event)=> {
   const goodHitFace = event.path.includes(currentFace);
   const goodHitHole = event.path.includes(currentHole);     
     console.log(goodHitHole, goodHitFace);
-  debugger
   if(goodHitFace && goodHitHole) {
-      // score points;
-  } else {
-      // no point
+      playerScore += 10;
+      document.querySelector('.numberScore').innerText = playerScore;
   }
 
-})
+});
 
+function randomTime(min, max){
+    return Math.floor(Math.random() * (max - min) + min)
+}
+//starting game function
+function playGame(){
+    
+    let time = randomTime(500, 2000);
+    currentHole = chooseRandomHole();
+    currentFace = chooseRandomFace();
+
+    currentHole.appendChild(currentFace);
+    setTimeout(() => {
+        currentHole.removeChild(currentFace);
+        playGame();
+
+    }, time);
+}
+
+document.querySelector(".startButton").addEventListener('click', (event) => {
+    event.preventDefault();
+    playGame();
+});

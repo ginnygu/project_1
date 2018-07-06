@@ -28,10 +28,8 @@ body {
     top: 40%;
     left: 5%;
 }
-.resets {
+button {
     position: absolute;
-    bottom: 10%;
-    left: 9.5%;
     width: 100px;
     height: 30px;
     font-family: 'Press Start 2P', cursive;
@@ -39,6 +37,14 @@ body {
     box-shadow: 10px 5px;
     border-radius: 10%;
     
+}
+.startButton {
+    bottom: 15%;
+    left: 9.3%;
+}
+.resets {
+    bottom: 10%;
+    left: 9.3%;
 }
 .holes {
     position: absolute;
@@ -98,17 +104,15 @@ body {
     bottom: 21%;
     right: 34%;
 }
-
 #faces {
-    background-size: 40%;
-    transform: translateY(60%);
-    transition: transform 0.3s;
     visibility: hidden;
-  }
-
-
-
-.faceholder img{
-    float: left; 
-
 }
+
+
+#aaron, #jason, #drake, #john, #jz{
+    transform: translateY(10%);
+    transition: 3s;
+    position: absolute;
+    height: 130px;
+
+}   
