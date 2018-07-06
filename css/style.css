@@ -50,59 +50,59 @@ button {
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 100px;
-    height: 100px;
-    bottom: 0;
+    height: 120px;
+    bottom: 10%;
     left: 20%;
+    overflow: hidden;
+    justify-content: flex-end;
 
 }
 .hole {
-    width: 150%;
-    height: auto;
     margin: 0 auto;
+    width: 150px;
+
 }
-.hole_top, .hole_bottom {
-    margin: 0 auto;
-   
-    
+
+.hole_bottom{
+    z-index: 10;
 }
 .hole_1 {
-    bottom: 0%;
+    bottom: 3%;
     right: -20%;
 }
 .hole_2 {
-    bottom: 2%;
+    bottom: 1%;
     right: 10%;
 }
 .hole_3 {
-    bottom: 0%;
+    bottom: 2%;
     right: 35%;
 }
 .hole_4 {
-    bottom: 10%;
-    right: 7%;
+    bottom: 18%;
+    right: 14%;
 }
 .hole_5 {
-    bottom: 11%;
-    right: -17%;
+    bottom: 20%;
+    right: -12%;
 }
 .hole_6 {
-    bottom: 12%;
-    right: 33%;
+    bottom: 18%;
+    right: 37%;
 }
 .hole_7 {
-    bottom: 20%;
-    right: -16%;
+    bottom: 35%;
+    right: -12%;
 }
 
 .hole_8 {
-    bottom: 19%;
-    right: 12%;
+    bottom: 33%;
+    right: 15%;
 }
 
 .hole_9 {
-    bottom: 21%;
-    right: 34%;
+    bottom: 34%;
+    right: 39%;
 }
 #faces {
     visibility: hidden;
@@ -110,9 +110,10 @@ button {
 
 
 #aaron, #jason, #drake, #john, #jz{
-    transform: translateY(10%);
+    transform: translateY(-50%);
     transition: 3s;
     position: absolute;
-    height: 130px;
+    height: 180px;
+    float: left;
 
 }   

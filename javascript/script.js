@@ -41,6 +41,7 @@ function randomTime(min, max){
     return Math.floor(Math.random() * (max - min) + min)
 }
 //starting game function
+let timed;
 function playGame(){
     
     let time = randomTime(500, 2000);
@@ -48,14 +49,46 @@ function playGame(){
     currentFace = chooseRandomFace();
 
     currentHole.appendChild(currentFace);
-    setTimeout(() => {
+    timed = setTimeout(() => {
         currentHole.removeChild(currentFace);
         playGame();
 
     }, time);
-}
 
+    
+}
+// start button
 document.querySelector(".startButton").addEventListener('click', (event) => {
     event.preventDefault();
     playGame();
+    startTimer();
 });
+
+//timer
+
+document.querySelector('.timer').innerHTML =
+  00 + ":" + 10;
+
+
+function startTimer() {
+  var presentTime = document.querySelector('.timer').innerHTML;
+  var timeArray = presentTime.split(/[:]+/);
+  var m = timeArray[0];
+  var s = checkSecond((timeArray[1] - 1));
+  if(s==59){m=m-1}
+  if(m<0){
+      clearTimeout(timed);
+    return;
+  }
+  
+  document.querySelector('.timer').innerHTML =
+    m + ":" + s;
+  setTimeout(startTimer, 1000);
+ 
+}
+
+function checkSecond(sec) {
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 0) {sec = "59"};
+  return sec;
+}
