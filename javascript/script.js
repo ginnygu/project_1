@@ -25,13 +25,18 @@ function chooseRandomFace(collection){
     } while (newFace === currentFace);
     return newFace;
 }
+
+//adding sound to game
+let mySound = new Audio('sound/ouch.mp3');
 // collecting point function
 document.querySelector('#gameholes').addEventListener('click', (event)=> {
   const goodHitFace = event.path.includes(currentFace);
-//   const goodHitHole = event.path.includes(currentHole);     
-  if(goodHitFace && instructors) {
-      playerScore += 10;
+  const goodHitHole = event.path.includes(currentHole);  
+  if(goodHitFace && goodHitHole) {
+      playerScore += parseInt(event.target.dataset.increment);
       document.querySelector('.numberScore').innerText = playerScore;
+      mySound.play();
+      
   }
 });
 
@@ -52,14 +57,14 @@ function playGame(){
     }, time); 
 }
 
-// start button
+// start button event listener.
 document.querySelector(".startButton").addEventListener('click', (event) => {
     event.preventDefault();
     playGame();
     startTimer();
 });
 
-//timer
+//timer functions
 
 document.querySelector('.timer').innerHTML =
   00 + ":" + 15;
@@ -101,11 +106,14 @@ window.addEventListener('load', (event) => {
     modalOne.classList.add('show_box');
 });
 
+// to close all modal boxes
 function closeButton(){
       modalOne.classList.remove('show_box');
       instruBox.classList.remove('show_box');
 }
 
+
+//info modal box
 function infoBox(){
     modalOne.classList.remove('show_box');
     instruBox.classList.add('show_box');

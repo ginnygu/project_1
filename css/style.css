@@ -16,7 +16,7 @@ body {
 }
 /* changing the cursor to a hammer */
 #gameholes {
-    cursor: url(../images/hammer.png);
+    cursor: url('../images/hammer.png'), auto;
 }
 
 /* top right and left section */
@@ -60,6 +60,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 120px;
+    width: 150px;
     bottom: 10%;
     left: 20%;
     overflow: hidden;
