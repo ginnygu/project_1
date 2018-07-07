@@ -3,6 +3,7 @@ let instructors = document.querySelectorAll('#faces>img');
 let playerScore = 0;
 let currentHole = chooseRandom(holes);
 let currentFace = chooseRandom(instructors);
+let endFace = document.querySelector('#drake');
 // @author Jason Seminara <js@ga.co>
 function chooseRandom(collection) {
   return collection[Math.floor(Math.random() * collection.length)];
@@ -36,16 +37,19 @@ document.querySelector('#gameholes').addEventListener('click', (event)=> {
       playerScore += parseInt(event.target.dataset.increment);
       document.querySelector('.numberScore').innerText = playerScore;
       mySound.play();
+      end();
       
   }
 });
 
+// makes a random time for when the random head pops out of the random hole
 function randomTime(min, max){
     return Math.floor(Math.random() * (max - min) + min)
 }
 //starting game function
 let timed;
 
+// combining the random head and random holes together
 function playGame(){
     let time = randomTime(500, 2000);
     currentHole = chooseRandomHole();
@@ -55,6 +59,7 @@ function playGame(){
         currentHole.removeChild(currentFace);
         playGame();
     }, time); 
+
 }
 
 // start button event listener.
@@ -102,6 +107,8 @@ const closeBox = document.querySelector('.game_button');
 const instruBox = document.querySelector('.info_box');
 const info = document.querySelector('.instru_button');
 const closeBox2 = document.querySelector('.game_button2');
+
+//loads the first modal box when the page loads
 window.addEventListener('load', (event) => {
     modalOne.classList.add('show_box');
 });
@@ -123,7 +130,7 @@ closeBox.addEventListener('click', closeButton);
 closeBox2.addEventListener('click', closeButton);
 info.addEventListener('click', infoBox);
 
-//Game Over
+//Game Over modal box
 let finalScore = document.querySelector('.numberScore').innerText;
 const gameBox = document.querySelector('.gameOver');
 
