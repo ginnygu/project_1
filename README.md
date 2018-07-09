@@ -17,21 +17,21 @@ Wireframe-
 
 Initial thought on Game Building
 
--Originally, I wanted a game that is easy to play and funny. I really liked the idea of a retro feel game and through some research I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles.
+- A game that is easy to play and funny. I really liked the idea of a retro feel game and through some research I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles.
 
--Holes and Instructors-
+- Holes and Instructors-
 I knew that I had to use some type of math floor and math random to help with deciding on the randomness of holes and which hole the 'intructors' were going to pop up.
 
 - Points and Timer- 
 Unlike the traditional game, this game will collect different amount of points based on the instructor but game will end on a set time.
 
--Win-
+- Win-
 When the game ends through the timer, there's a win window that gives the players an oportunity to play again.
 
 
 Phases of completion
 
--Game board-
+- Game board-
 Using more retro pictures and font, the board was created with using flexbox and multiple divs. Each hole was split in two to create the illusion of the instructors coming out of the hole. There's a reset button, and a start button to begin the game. The timer and score is also on the board.
 
 - Randomize-
@@ -43,7 +43,7 @@ Using and understading how path worked during an event listener, made the clicks
 - Timer-
 With cleartime interval, the timer was able to stop the animations to end the game. 
 
--Modal-
+- Modal-
 Using modal pop-ups the information gained through the game will still be there for the winning/game over condition.
 
 Links and Resources
