@@ -46,6 +46,7 @@ Using and understading how path worked during an event listener, made the clicks
 
 - Timer-
 With cleartime interval, the timer was able to stop the animations to end the game. 
+```javascript
     function playGame(){
     let time = randomTime(500, 2000);
     currentHole = chooseRandomHole();
@@ -57,7 +58,7 @@ With cleartime interval, the timer was able to stop the animations to end the ga
     }, time); 
 
     }
-
+```
 - Modal-
 Using modal pop-ups the information gained through the game will still be there for the winning/game over condition.
 
