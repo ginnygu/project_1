@@ -26,7 +26,7 @@ Use of JavaScript for the display, interaction and logic of the game.
 
 Notes on Game Structure
 
-A game that is easy to play and funny. I really liked the idea of a retro feel game and through some research I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles. Math.floor and Math.random helps with the randomization to every hole and instructor's motion. Unlike the traditional game, this game will collect different amount of points based on the instructor using dataset. When the game ends through the timer, there's a win window that gives the players an oportunity to play again.
+A game that is easy to play. I really liked the idea of a retro feel games and through some research, I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles. Math.floor and Math.random helps with the randomization to every hole and instructor's motion. Unlike the traditional game, this game will collect different amount of points based on the instructor you hit using dataset. When the game ends through the timer, there's a win window that gives the player their score and an oportunity to play again.
 
 
 The Making of Whack - the - Instructor
