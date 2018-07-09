@@ -14,10 +14,6 @@ body {
 .baby {
     flex: 1;
 }
-/* changing the cursor to a hammer */
-#gameholes {
-    cursor: none;
-}
 
 /* top right and left section */
 .timer_score {
