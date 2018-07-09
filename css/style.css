@@ -19,10 +19,6 @@ body {
     cursor: none;
 }
 
-.holes:hover {
-    cursor: url('../images/hammer.png'), default;
-}
-
 /* top right and left section */
 .timer_score {
     top: 10%;
@@ -69,7 +65,7 @@ body {
     left: 20%;
     overflow: hidden;
     justify-content: flex-end;
-
+    cursor: url('../images/hammer.png'), default;
 }
 .hole {
     margin: 0 auto;
