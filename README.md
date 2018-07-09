@@ -42,5 +42,9 @@ Using and understading how path worked during an event listener, made the clicks
 With cleartime interval, the timer was able to stop the animations to end the game. 
 
 -Modal-
-Using modal pop-ups the information gained through 
+Using modal pop-ups the information gained through the game will still be there for the winning/game over condition.
+
+Links and Resources
+https://css-tricks.com/almanac/properties/c/cursor/
+https://medium.com/@peterchic/design-to-development-f4087b97ade0
 
