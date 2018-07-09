@@ -47,6 +47,6 @@ With cleartime interval, the timer was able to stop the animations to end the ga
 Using modal pop-ups the information gained through the game will still be there for the winning/game over condition.
 
 Links and Resources
--https://css-tricks.com/almanac/properties/c/cursor/
--https://medium.com/@peterchic/design-to-development-f4087b97ade0
+- https://css-tricks.com/almanac/properties/c/cursor/
+- https://medium.com/@peterchic/design-to-development-f4087b97ade0
 
