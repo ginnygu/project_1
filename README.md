@@ -8,14 +8,16 @@ What is this game about?
 
 
 Wireframe-
-Inline-style:
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project1.png "Logo Title Text 1")
-
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project1.png "First page")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project2.png "First page")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project3.png "First page")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project4.png "First page")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project5.png "First page")
 
 
 Initial thought on Game Building
 
--Originally, I wanted a game that is easy to play aand funny. I really liked the idea of a retro feel game and through some research I saw the possibilities that whack-a-mole. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles.
+-Originally, I wanted a game that is easy to play and funny. I really liked the idea of a retro feel game and through some research I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles.
 
 -Holes and Instructors-
 I knew that I had to use some type of math floor and math random to help with deciding on the randomness of holes and which hole the 'intructors' were going to pop up.
