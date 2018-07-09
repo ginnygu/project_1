@@ -16,7 +16,11 @@ body {
 }
 /* changing the cursor to a hammer */
 #gameholes {
-    cursor:url(../images/hammer.png), default;
+    cursor: none;
+}
+
+.holes:hover {
+    cursor: url('../images/hammer.png'), default;
 }
 
 /* top right and left section */
