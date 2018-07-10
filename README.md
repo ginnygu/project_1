@@ -1,8 +1,7 @@
+# Whack - the - Instructor
+
 ## What is Whack - the - Instructor?
-- A simple game that brings back the inner child. 
-- While learning a new language, there's time of frustration and a need to let off steam.
-- Take this time to get some points while clicking on the instructors' faces.
-- Based on the instructor's position, they each give a different point system.
+A simple game that brings back the inner child. While learning a new language, there's time of frustration and a need to let off some steam. Take this time to get some points while hitting the instructors' with a hammer. Based on the instructor, they each have different points.
 
 
 ## Wireframe-
