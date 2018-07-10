@@ -5,11 +5,11 @@ A simple game that brings back the inner child. While learning a new language, t
 
 
 ## Wireframe-
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project1.png "First page")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project2.png "First page")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project3.png "First page")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project4.png "First page")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project5.png "First page")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project1.png "first modal")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project2.png "second modal")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project3.png "game play")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project4.png "game play2")
+![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project5.png "winning")
 
 
 ## Technical Discussion
