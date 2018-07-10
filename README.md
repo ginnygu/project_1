@@ -1,11 +1,11 @@
-##What is Whack - the - Instructor?
+## What is Whack - the - Instructor?
 - A simple game that brings back the inner child. 
 - While learning a new language, there's time of frustration and a need to let off steam.
 - Take this time to get some points while clicking on the instructors' faces.
 - Based on the instructor's position, they each give a different point system.
 
 
-##Wireframe-
+## Wireframe-
 ![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project1.png "First page")
 ![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project2.png "First page")
 ![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project3.png "First page")
@@ -13,25 +13,25 @@
 ![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project5.png "First page")
 
 
-##Technical Discussion
+## Technical Discussion
 
-###HTML
+### HTML
 The game is built with many divs, manipulated with JavaScript and CSS.
 
-###CSS
+### CSS
 There's usage of CSS to help with setting the gameboard and hiding some HTML properties.
 
-###JavaScript
+### JavaScript
 Use of JavaScript for the display, interaction and logic of the game.
 
-##Notes on Game Structure
+## Notes on Game Structure
 
 A game that is easy to play. I really liked the idea of a retro feel games and through some research, I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles. Math.floor and Math.random helps with the randomization to every hole and instructor's motion. Unlike the traditional game, this game will collect different amount of points based on the instructor you hit using dataset. When the game ends through the timer, there's a win window that gives the player their score and an oportunity to play again.
 
 
-##The Making of Whack - the - Instructor
+## The Making of Whack - the - Instructor
 
-###Author
+### Author
 
 Ginny Gu Tang
 
@@ -74,13 +74,15 @@ With cleartime interval, the timer was able to stop the animations to end the ga
 - Modal-
 Using modal pop-ups the information gained through the game will still be there for the winning/game over condition.
 
-###Credits
+### Credits
 - https://css-tricks.com/almanac/properties/c/cursor/ - provided information on how to change the cursor to a hammer.
 - https://medium.com/@peterchic/design-to-development-f4087b97ade0 - provided help with understanding how whack- a - mole works through code.
 - https://sabe.io/tutorials/how-to-create-modal-popup-box- provide instructions to making a modal, the winning section of the game.
 
+- Jason Seminara- provided help with making the randomize function more effective and for it to be used globally.
 
-###Opportunities for Further Growth
+
+### Opportunities for Further Growth
 
 While the game works from the beginning to the end. There are different conditions that can be added to make the game harder
 
