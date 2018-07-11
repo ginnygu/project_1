@@ -21,7 +21,7 @@ Use of JavaScript for the display, interaction and logic of the game.
 
 ## Notes on Game Structure
 
-I really like the idea of a retro feel games and through some research, I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles. Math.floor and Math.random helps with the randomization to every hole and instructor's motion. Unlike the traditional game, this game will collect different amount of points based on the instructor you hit using dataset. When the game ends through the timer, there's a win window that gives the player their score and an oportunity to play again.
+I really like the idea of a retro feel games and through some research, I saw the possibilities that whack-a-mole gave. I took this oportunity to create a game with humorous properties. I decided to add faces of the instructors to replace the moles. Unlike the traditional game, this game will collect different amount of points based on the instructor you hit using dataset. When the game ends through the timer, there's a win window that gives the player their score and an oportunity to play again.
 
 
 ## The Making of Whack - the - Instructor
@@ -67,7 +67,7 @@ With cleartime interval, the timer was able to stop the animations to end the ga
   }
 ```
 - Modal-
-Using modal pop-ups the information gained through the game will still be there for the winning/game over condition.
+A modal was used to present the win/game-over condition.
 
 ### Credits
 - https://css-tricks.com/almanac/properties/c/cursor/ - provided information on how to change the cursor to a hammer.
@@ -79,5 +79,5 @@ Using modal pop-ups the information gained through the game will still be there 
 
 ### Opportunities for Further Growth
 
-While the game works from the beginning to the end. There are different conditions that can be added to make the game harder
+While the game works from the beginning to the end. There are different conditions that can be added to make the game harder. Also putting a high score section to the end of the game.
 
