@@ -4,12 +4,8 @@
 A simple game that brings back the inner child. While learning a new language, there's time of frustration and a need to let off some steam. Take this time to get some points while hitting the instructors' with a hammer. Based on the instructor, they each have different points.
 
 
-## Wireframe-
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project1.png "first modal")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project2.png "second modal")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project3.png "game play")
+## Screenshot-
 ![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project4.png "game play2")
-![alt text](https://github.com/ginnygu/project_1/blob/master/images/wireframe_project5.png "winning")
 
 
 ## Technical Discussion
