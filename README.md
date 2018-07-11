@@ -81,3 +81,5 @@ A modal was used to present the win/game-over condition.
 
 While the game works from the beginning to the end. There are different conditions that can be added to make the game harder. Also putting a high score section to the end of the game.
 
+### Video Explanation
+https://youtu.be/MYqZSBPXzbA
